@@ -25,7 +25,7 @@ contract ZombieFeeding is ZombieFactory {
     KittyInterface kittyContract;
 
     modifier onlyOwnerOf(uint256 _zombieId) {
-        require(msg.sender == zombieToOwner[_zombieId]);
+        require(msg.sender == ownerOf(_zombieId));
         _;
     }
 
@@ -59,7 +59,7 @@ contract ZombieFeeding is ZombieFactory {
         ) {
             newDna = newDna - (newDna % 100) + 99;
         }
-        _createZombie("NoName", newDna);
+        _createZombie("NoName", newDna, "");
         _triggerCooldown(myZombie);
     }
 
