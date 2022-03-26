@@ -1,0 +1,18 @@
+{
+  "name": "myzombies",
+  "version": "1.0.0",
+  "description": "using solidity 0.8.13 with truffle and so on...",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "truffle": "^5.5.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "truffle test"
+  },
+  "author": "pluckhuang",
+  "license": "ISC"
+}
