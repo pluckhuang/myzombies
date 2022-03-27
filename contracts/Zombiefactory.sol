@@ -28,9 +28,6 @@ contract ZombieFactory is Ownable, ERC721URIStorage {
 
     Zombie[] public zombies;
 
-    mapping(uint256 => address) public zombieToOwner;
-    mapping(address => uint256) ownerZombieCount;
-
     constructor() ERC721("ZombieItem", "ZTM") {}
 
     function _createZombie(
