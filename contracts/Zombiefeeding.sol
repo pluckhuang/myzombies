@@ -57,7 +57,7 @@ contract ZombieFeeding is ZombieFactory {
             keccak256(abi.encodePacked(_species)) ==
             keccak256(abi.encodePacked("kitty"))
         ) {
-            newDna = newDna - (newDna % 100) + 99;
+            newDna = newDna - (newDna % 100) + 99;   // last xx == 99
         }
         _createZombie("NoName", newDna, "");
         _triggerCooldown(myZombie);

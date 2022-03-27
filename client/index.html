@@ -12,13 +12,24 @@
       src="node_modules/web3/dist/web3.min.js"
     ></script>
     <script type="text/javascript" src="src/utils.js"></script>
-    <script type="text/javascript" src="src/index.js"></script>
   </head>
 
   <body>
-    <div id="txStatus">no</div>
-    <div id="zombies">no</div>
+    <div id="txStatus"></div>
+    <button onclick="account1_create()">account1_create</button>
+    <button onclick="account2_create()">account2_create</button>
+    <button onclick="checkData()">checkData</button>
 
-    <script></script>
+    <p>current account:</p>
+    <div id="account"></div>
+    <p>current account zombies_length:</p>
+    <div id="zombies_length"></div>
+    <div id="zombies"></div>
+
+    <p>toAccount: <input id="toAccount" value="" /></p>
+    <p>transTokenId: <input id="transTokenId" value="" /></p>
+    <button onclick="transferData()">trans a to b</button>
+
+    <script type="text/javascript" src="src/index.js"></script>
   </body>
 </html>

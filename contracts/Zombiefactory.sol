@@ -91,4 +91,8 @@ contract ZombieFactory is Ownable, ERC721URIStorage {
     {
         return ownerOf(zombieId);
     }
+
+    function getZombiesLength() public view onlyOwner returns (uint256) {
+        return balanceOf(msg.sender);
+    }
 }
