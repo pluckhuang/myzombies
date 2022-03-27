@@ -84,3 +84,12 @@
 2. 送出自己的🧟‍♀️給其他钱包。
 3. 查看自己钱包地址所拥有的🧟‍♀️信息。
 ```
+
+#### 注意
+
+目前随机数生成使用 keccak256(abi.encodePacked(block.timestamp, msg.sender, randNonce))，未使用 chainlink。
+
+#### 详细参考
+
+- <https://solidity-by-example.org/>
+- <https://cryptozombies.io/>
