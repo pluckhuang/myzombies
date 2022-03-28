@@ -45,9 +45,9 @@
 ```text
 .
 ├── build      // 编译目录
-│   └── contracts
-├── client     // dapp 前端目录， 使用 contracts abi 和 钱包与合约交互
-│   ├── contracts   // 编译合约后，将即将使用的合约 abi json 文件拷入。
+│   └── contracts  // 合约 abi json
+├── client     // dapp 前端目录， 使用 contracts abi 和 钱包 provider
+│   ├── bs-config.json   // lite server 配置
 │   ├── index.html  //
 │   ├── package-lock.json
 │   ├── package.json
