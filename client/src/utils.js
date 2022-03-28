@@ -18,7 +18,7 @@ const getWeb3 = () => {
 };
 
 const getContract = async (web3) => {
-  const data = await $.getJSON("./contracts/CryptoZombies.json");
+  const data = await $.getJSON("CryptoZombies.json");
 
   const netId = await web3.eth.net.getId();
   const deployedNetwork = data.networks[netId];
